@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    - Day {{ solution.day }}
+{% endblock %}
+
+{% block body %}
+    <a href="{{ path('homepage') }}"><- Back</a>
+    <h1>Solution for day {{ solution.day }}</h1>
+    <div>Part 1: {{ solution.part1|default('No solution') }}</div>
+    <div>Part 2: {{ solution.part2|default('No solution') }}</div>
+{% endblock %}

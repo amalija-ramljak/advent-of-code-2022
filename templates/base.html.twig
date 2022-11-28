@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}AoC 2022{% endblock %}</title>
+        <title>AoC 2022 {% block title %}{% endblock %}</title>
         <link rel="icon" href="{{ asset('favicon.png') }}">
         {% block stylesheets %}
             {{ vite_entry_link_tags('app') }}

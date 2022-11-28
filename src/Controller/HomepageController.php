@@ -11,6 +11,6 @@ class HomepageController extends AbstractController
     #[Route('/', 'homepage')]
     public function __invoke(): Response
     {
-        return $this->render('base.html.twig');
+        return $this->render('routes/homepage.html.twig', ['days' => range(1, 1)]);
     }
 }
