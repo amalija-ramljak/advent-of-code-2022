@@ -12,12 +12,6 @@ class DayController extends AbstractController
     #[Route('/day/{day}', 'day')]
     public function __invoke(int $day, SolutionService $service): Response
     {
-        $result = $service->getSolutionForDay($day);
-
-        if (array_key_exists('error', $result)) {
-            return $this->render('routes/error.html.twig', $result);
-        }
-
-        return $this->render('routes/day.html.twig', $result);
+        return $this->render('routes/day.html.twig', ['day' => $day]);
     }
 }
