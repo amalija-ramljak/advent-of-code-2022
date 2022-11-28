@@ -6,34 +6,34 @@
 
 |completed|not completed|
 :-:|:-:
-![](public/complete.svg)|![](public/incomplete.svg)
+![](readme/complete.svg)|![](readme/incomplete.svg)
 
 ----
 
 |Day|Name|Completion|
 |:-:|:-:|:-:|
-|**01**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**02**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**03**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**04**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**05**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**06**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**07**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**08**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**09**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**10**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**11**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**12**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**13**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**14**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**15**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**16**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**17**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**18**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**19**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**20**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**21**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**22**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**23**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**24**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
-|**25**|*Name*|![](public/incomplete.svg) ![](public/incomplete.svg)|
+|**01**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**02**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**03**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**04**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**05**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**06**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**07**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**08**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**09**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**10**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**11**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**12**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**13**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**14**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**15**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**16**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**17**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**18**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**19**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**20**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**21**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**22**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**23**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**24**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**25**|*Name*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
