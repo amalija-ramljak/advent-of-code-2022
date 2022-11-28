@@ -1,6 +1,6 @@
-# Advent of Code 20XX
+# Advent of Code 2022
 
-### _Language_
+### _Symfony (PHP)_
 
 ----
 
