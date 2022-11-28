@@ -1,12 +1,23 @@
 {% extends "base.html.twig" %}
 
 {% block title %}
-    - Day {{ solution.day }}
+    - Day {{ day }}
 {% endblock %}
 
 {% block body %}
     <a href="{{ path('homepage') }}"><- Back</a>
-    <h1>Solution for day {{ solution.day }}</h1>
-    <div>Part 1: {{ solution.part1|default('No solution') }}</div>
-    <div>Part 2: {{ solution.part2|default('No solution') }}</div>
+    <h1>Solutions for day {{ day }}</h1>
+
+    <div>
+        <input type="file" data-day="{{ day }}">
+    </div>
+
+    <p class="solution-part" id="part-one">Part 1: <strong></strong></p>
+    <p class="solution-part" id="part-two">Part 2: <strong></strong></p>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {{ vite_entry_script_tags('file') }}
 {% endblock %}
