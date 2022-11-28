@@ -6,7 +6,7 @@ use App\Entity\Solution;
 
 class SolutionService
 {
-    public function getSolutionForDay(int $day): array|Solution
+    public function getSolutionForDay(int $day, string $inputOne, string $inputTwo): array|Solution
     {
         $solutionServiceName = self::getSolutionServiceName($day);
 
@@ -19,7 +19,7 @@ class SolutionService
         }
     }
 
-    public function getPartOneSolutionForDay(int $day): array|Solution
+    public function getPartOneSolutionForDay(int $day, string $input): array|Solution
     {
         $solutionServiceName = self::getSolutionServiceName($day);
 
@@ -32,7 +32,7 @@ class SolutionService
         }
     }
 
-    public function getPartTwoSolutionForDay(int $day): array|Solution
+    public function getPartTwoSolutionForDay(int $day, string $input): array|Solution
     {
         $solutionServiceName = self::getSolutionServiceName($day);
 

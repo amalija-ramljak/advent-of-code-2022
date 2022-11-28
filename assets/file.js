@@ -9,8 +9,11 @@ fileInput.addEventListener('input', async ({target}) => {
   [1, 2].forEach((i) => {
     axios
       .post(`/solution/day/${target.dataset.day}/part/${i}`, {
-        fileContent
-      })
+          fileContent,
+          test: 1
+        }, {headers: {'Content-Type': 'application/json'}}
+      )
       .then(({data}) => console.log(data))
   })
-});
+})
+;
