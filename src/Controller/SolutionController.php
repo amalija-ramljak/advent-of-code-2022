@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Service\SolutionService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
@@ -10,14 +11,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class SolutionController extends AbstractController
 {
     #[Route('/part/1')]
-    public function solutionPartOne(int $day): JsonResponse
+    public function solutionPartOne(int $day, SolutionService $service): JsonResponse
     {
-        return new JsonResponse(['day' => $day, 'part' => 1]);
+        $solution = $service->getPartOneSolutionForDay($day);
+
+        return new JsonResponse(['day' => $day, 'part' => 1, 'solution' => $solution->toArray()]);
     }
 
     #[Route('/part/2')]
-    public function solutionPartTwo(int $day): JsonResponse
+    public function solutionPartTwo(int $day, SolutionService $service): JsonResponse
     {
-        return new JsonResponse(['day' => $day, 'part' => 2]);
+        $solution = $service->getPartTwoSolutionForDay($day);
+
+        return new JsonResponse(['day' => $day, 'part' => 2, 'solution' => $solution->toArray()]);
     }
 }

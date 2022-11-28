@@ -2,21 +2,55 @@
 
 namespace App\Service;
 
+use App\Entity\Solution;
+
 class SolutionService
 {
-    public function getSolutionForDay(int $day): array
+    public function getSolutionForDay(int $day): array|Solution
     {
-        $paddedDayNumber = str_pad((string)$day, 2, "0", STR_PAD_LEFT);
-        $dayServiceName = "Day${paddedDayNumber}SolutionService";
+        $solutionServiceName = self::getSolutionServiceName($day);
 
         try {
-            return [
-                'solution' => call_user_func(["App\Service\SolutionService\\${dayServiceName}", 'getSolution'], ['args' => $dayServiceName])
-            ];
+            return call_user_func([$solutionServiceName, 'getSolution'], []);
         } catch (\TypeError $error) {
             return [
                 'error' => $error->getMessage()
             ];
         }
+    }
+
+    public function getPartOneSolutionForDay(int $day): array|Solution
+    {
+        $solutionServiceName = self::getSolutionServiceName($day);
+
+        try {
+            return call_user_func([$solutionServiceName, 'getSolutionForPartOne'], []);
+        } catch (\TypeError $error) {
+            return [
+                'error' => $error->getMessage()
+            ];
+        }
+    }
+
+    public function getPartTwoSolutionForDay(int $day): array|Solution
+    {
+        $solutionServiceName = self::getSolutionServiceName($day);
+
+        try {
+            return call_user_func([$solutionServiceName, 'getSolutionForPartTwo'], []);
+        } catch (\TypeError $error) {
+            return [
+                'error' => $error->getMessage()
+            ];
+        }
+    }
+
+
+    private static function getSolutionServiceName(int $day)
+    {
+        $paddedDay = str_pad((string)$day, 2, "0", STR_PAD_LEFT);
+        $dayServiceName = "Day${paddedDay}SolutionService";
+
+        return "App\Service\SolutionService\\${dayServiceName}";
     }
 }

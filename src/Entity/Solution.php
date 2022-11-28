@@ -42,4 +42,13 @@ class Solution
     {
         $this->part2 = $part2Solution;
     }
+
+    public function toArray()
+    {
+        return [
+            'day' => $this->day,
+            'part1' => $this->part1,
+            'part2' => $this->part2,
+        ];
+    }
 }
