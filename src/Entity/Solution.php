@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\SolutionService;
+namespace App\Entity;
 
 class Solution
 {
