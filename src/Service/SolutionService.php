@@ -6,12 +6,12 @@ use App\Entity\Solution;
 
 class SolutionService
 {
-    public function getSolutionForDay(int $day, string $inputOne, string $inputTwo): array|Solution
+    public function getSolutionForDay(int $day, string $input): array|Solution
     {
         $solutionServiceName = self::getSolutionServiceName($day);
 
         try {
-            return call_user_func([$solutionServiceName, 'getSolution'], []);
+            return call_user_func([$solutionServiceName, 'getSolution'], $input);
         } catch (\TypeError $error) {
             return [
                 'error' => $error->getMessage()
@@ -24,7 +24,7 @@ class SolutionService
         $solutionServiceName = self::getSolutionServiceName($day);
 
         try {
-            return call_user_func([$solutionServiceName, 'getSolutionForPartOne'], []);
+            return call_user_func([$solutionServiceName, 'getSolutionForPartOne'], $input);
         } catch (\TypeError $error) {
             return [
                 'error' => $error->getMessage()
@@ -37,7 +37,7 @@ class SolutionService
         $solutionServiceName = self::getSolutionServiceName($day);
 
         try {
-            return call_user_func([$solutionServiceName, 'getSolutionForPartTwo'], []);
+            return call_user_func([$solutionServiceName, 'getSolutionForPartTwo'], $input);
         } catch (\TypeError $error) {
             return [
                 'error' => $error->getMessage()
