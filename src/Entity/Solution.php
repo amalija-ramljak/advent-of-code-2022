@@ -28,7 +28,7 @@ class Solution
         return $this->part1;
     }
 
-    public function setSolutionForPart1(int $part1Solution): void
+    public function setSolutionForPart1(?int $part1Solution): void
     {
         $this->part1 = $part1Solution;
     }
@@ -38,7 +38,7 @@ class Solution
         return $this->part2;
     }
 
-    public function setSolutionForPart2(int $part2Solution): void
+    public function setSolutionForPart2(?int $part2Solution): void
     {
         $this->part2 = $part2Solution;
     }

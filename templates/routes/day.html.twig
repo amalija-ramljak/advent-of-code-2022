@@ -5,19 +5,23 @@
 {% endblock %}
 
 {% block body %}
-    <a href="{{ path('homepage') }}"><- Back</a>
+    <a class="btn btn-back" href="{{ path('homepage') }}">Back</a>
     <h1>Solutions for day {{ day }}</h1>
 
-    <div>
-        <input type="file" data-day="{{ day }}">
+    <div class="file-input">
+        <input id="puzzle-input" type="file" data-day="{{ day }}">
+        <label class="btn" for="puzzle-input">Upload the file containing day {{ day }}'s puzzle input.</label>
+        <div class="file-name">File: <span></span></div>
     </div>
 
-    <p class="solution-part" id="part-one">Part 1: <strong></strong></p>
-    <p class="solution-part" id="part-two">Part 2: <strong></strong></p>
+    <div class="solution-parts">
+        <div class="solution-parts__part" id="part-one">Part 1<strong>Waiting for input</strong></div>
+        <div class="solution-parts__part" id="part-two">Part 2<strong>Waiting for input</strong></div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
 
-    {{ vite_entry_script_tags('file') }}
+    {{ vite_entry_script_tags('day') }}
 {% endblock %}

@@ -1,0 +1,51 @@
+.file-input {
+    input[type="file"] {
+        display: none;
+    }
+
+    label {
+        display: flex;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .file-name {
+        margin-top: 1rem;
+
+        display: none;
+        &.show {
+            display: block;
+        }
+
+        span {
+            font-family: monospace;
+        }
+    }
+}
+
+.solution-parts {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        min-width: 200px;
+
+        border: 1px solid grey;
+        padding: 2rem;
+
+        font-size: 1.5rem;
+
+        strong {
+            font-size: 1.25rem;
+        }
+    }
+}
