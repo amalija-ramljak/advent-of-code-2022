@@ -31,7 +31,7 @@ class Day01SolutionService implements DaySolutionServiceInterface
 
     private static function calculatePartOne(string $input): int
     {
-        return 12;
+        return 123;
     }
 
     public static function getSolutionForPartTwo(string $input): Solution
@@ -46,6 +46,6 @@ class Day01SolutionService implements DaySolutionServiceInterface
 
     private static function calculatePartTwo(string $input): int
     {
-        return 12;
+        return 321;
     }
 }
