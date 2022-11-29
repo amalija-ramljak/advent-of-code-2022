@@ -6,7 +6,7 @@ use App\Entity\Solution;
 
 interface DaySolutionServiceInterface
 {
-    public static function getSolution(mixed $args): Solution;
-    public static function getSolutionForPartOne(mixed $args): Solution;
-    public static function getSolutionForPartTwo(mixed $args): Solution;
+    public static function getSolution(string $input): Solution;
+    public static function getSolutionForPartOne(string $input): Solution;
+    public static function getSolutionForPartTwo(string $input): Solution;
 }
