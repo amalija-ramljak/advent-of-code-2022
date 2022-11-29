@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SolutionController extends AbstractController
 {
     #[Route('/solution/day/{day}/part/{part}', methods: ['POST'])]
-    public function solutionPartOne(int $day, int $part, SolutionService $service, Request $request): JsonResponse
+    public function __invoke(int $day, int $part, SolutionService $service, Request $request): JsonResponse
     {
         $input = json_decode($request->getContent(), false)->fileContent;
 
