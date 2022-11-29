@@ -5,7 +5,14 @@
 
     <ul>
         {% for day in days %}
-            <li>Solution for <a href="{{ path('day', { day: day }) }}">day {{ day }}</a></li>
+            <li>
+                <span>
+                    Solution for
+                    <a href="{{ path('day', { day: day }) }}">
+                        day {{ day }}
+                    </a>
+                </span>
+            </li>
         {% endfor %}
     </ul>
 {% endblock %}
