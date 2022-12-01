@@ -20,6 +20,12 @@
     </div>
 {% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    {{ vite_entry_link_tags('day') }}
+{% endblock %}
+
 {% block javascripts %}
     {{ parent() }}
 
