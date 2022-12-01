@@ -31,7 +31,9 @@ class Day01SolutionService implements DaySolutionServiceInterface
 
     private static function calculatePartOne(string $input): ?int
     {
-        return null;
+        $caloriesPerElf = self::getTotalCaloriesPerElf($input);
+
+        return max($caloriesPerElf);
     }
 
     public static function getSolutionForPartTwo(string $input): Solution
@@ -46,6 +48,36 @@ class Day01SolutionService implements DaySolutionServiceInterface
 
     private static function calculatePartTwo(string $input): ?int
     {
-        return null;
+        $caloriesPerElf = self::getTotalCaloriesPerElf($input);
+
+        rsort($caloriesPerElf);
+        $caloriesPerElf = array_slice($caloriesPerElf, 0, 3);
+
+        return self::mapArrayToSum($caloriesPerElf);
+    }
+
+    private static function getTotalCaloriesPerElf(string $input): array
+    {
+        $caloriesPerElf = explode("\n\n", $input);
+        foreach ($caloriesPerElf as $index => $elfCalories) {
+            $caloriesPerElf[$index] = array_map(
+                static fn($calorie) => (int)$calorie,
+                explode("\n", $elfCalories)
+            );
+        }
+
+        return array_map(
+            [self::class, 'mapArrayToSum'],
+            $caloriesPerElf
+        );
+    }
+
+    private static function mapArrayToSum(array $array): int
+    {
+        return array_reduce(
+            $array,
+            static fn($total, $calorieCount) => $total + $calorieCount,
+            0
+        );
     }
 }
