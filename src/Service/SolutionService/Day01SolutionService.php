@@ -3,6 +3,7 @@
 namespace App\Service\SolutionService;
 
 use App\Entity\Solution;
+use App\Service\MapService;
 
 class Day01SolutionService implements DaySolutionServiceInterface
 {
@@ -53,7 +54,7 @@ class Day01SolutionService implements DaySolutionServiceInterface
         rsort($caloriesPerElf);
         $caloriesPerElf = array_slice($caloriesPerElf, 0, 3);
 
-        return self::mapArrayToSum($caloriesPerElf);
+        return MapService::mapArrayToSum($caloriesPerElf);
     }
 
     private static function getTotalCaloriesPerElf(string $input): array
@@ -67,17 +68,8 @@ class Day01SolutionService implements DaySolutionServiceInterface
         }
 
         return array_map(
-            [self::class, 'mapArrayToSum'],
+            [MapService::class, 'mapArrayToSum'],
             $caloriesPerElf
-        );
-    }
-
-    private static function mapArrayToSum(array $array): int
-    {
-        return array_reduce(
-            $array,
-            static fn($total, $calorieCount) => $total + $calorieCount,
-            0
         );
     }
 }
