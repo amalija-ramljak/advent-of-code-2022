@@ -12,10 +12,10 @@
 
 |Day|Name|Completion|
 |:-:|:-:|:-:|
-|**01**|*Day 01*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
-|**02**|*Day 02*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
-|**03**|*Day 03*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
-|**04**|*Day 04*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**01**|*Snack pack*|![](readme/complete.svg) ![](readme/complete.svg)|
+|**02**|*The Battle for Snacks*|![](readme/complete.svg) ![](readme/complete.svg)|
+|**03**|*Inventory Stickers*|![](readme/complete.svg) ![](readme/complete.svg)|
+|**04**|*Cleaning Duty*|![](readme/complete.svg) ![](readme/complete.svg)|
 |**05**|*Day 05*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
 |**06**|*Day 06*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
 |**07**|*Day 07*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
