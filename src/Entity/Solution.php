@@ -5,8 +5,8 @@ namespace App\Entity;
 class Solution
 {
     private int $day;
-    private ?int $part1 = null;
-    private ?int $part2 = null;
+    private int|string|null $part1 = null;
+    private int|string|null $part2 = null;
 
     public function __construct(int $day)
     {
@@ -23,22 +23,22 @@ class Solution
         $this->day = $day;
     }
 
-    public function getPart1(): ?int
+    public function getPart1(): int|string|null
     {
         return $this->part1;
     }
 
-    public function setSolutionForPart1(?int $part1Solution): void
+    public function setSolutionForPart1(int|string|null $part1Solution): void
     {
         $this->part1 = $part1Solution;
     }
 
-    public function getPart2(): ?int
+    public function getPart2(): int|string|null
     {
         return $this->part2;
     }
 
-    public function setSolutionForPart2(?int $part2Solution): void
+    public function setSolutionForPart2(int|string|null $part2Solution): void
     {
         $this->part2 = $part2Solution;
     }

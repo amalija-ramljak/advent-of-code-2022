@@ -25,8 +25,12 @@ fileInput.addEventListener('input', async ({target}) => {
           test: 1
         }
       )
-      .then(({ data: { solution } }) => {
-        solutionElements[partName].innerText = solution[partName] ?? "No result (yet)";
+      .then(({ data: { solution, error } }) => {
+        if (error) {
+          solutionElements[partName].innerText = error;
+        } else {
+          solutionElements[partName].innerText = solution[partName] ?? "No result (yet)";
+        }
       })
   })
 });

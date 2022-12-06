@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Service\SolutionService;
+use PHPUnit\Util\Json;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,6 +20,10 @@ class SolutionController extends AbstractController
             $solution = $service->getPartOneSolutionForDay($day, $input);
         } elseif ($part === 2) {
             $solution = $service->getPartTwoSolutionForDay($day, $input);
+        }
+
+        if (is_array($solution)) {
+            return new JsonResponse($solution);
         }
 
         return new JsonResponse(['solution' => $solution->toArray()]);
