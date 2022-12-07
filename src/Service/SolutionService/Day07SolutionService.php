@@ -134,7 +134,7 @@ class Day07SolutionService implements DaySolutionServiceInterface
             $children = array_slice($command, 1);
 
             foreach ($children as $child) {
-                list($meta, $name) = explode(" ", $child);
+                [$meta, $name] = explode(" ", $child);
 
                 $size = 0;
                 if ($meta !== self::DIRECTORY) {
