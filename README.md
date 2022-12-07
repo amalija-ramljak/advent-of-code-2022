@@ -16,9 +16,9 @@
 |**02**|*The Battle for Snacks*|![](readme/complete.svg) ![](readme/complete.svg)|
 |**03**|*Inventory Stickers*|![](readme/complete.svg) ![](readme/complete.svg)|
 |**04**|*Cleaning Duty*|![](readme/complete.svg) ![](readme/complete.svg)|
-|**05**|*Day 05*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
-|**06**|*Day 06*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
-|**07**|*Day 07*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
+|**05**|*Sokoban 9001*|![](readme/complete.svg) ![](readme/complete.svg)|
+|**06**|*The Working-In-IT Condition*|![](readme/complete.svg) ![](readme/complete.svg)|
+|**07**|*Removing the Bare Minimum (Because Someone Will Surely Need the Malfunctioning Device's Files)*|![](readme/complete.svg) ![](readme/complete.svg)|
 |**08**|*Day 08*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
 |**09**|*Day 09*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
 |**10**|*Day 10*|![](readme/incomplete.svg) ![](readme/incomplete.svg)|
