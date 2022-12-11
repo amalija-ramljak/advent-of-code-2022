@@ -25,11 +25,19 @@ fileInput.addEventListener('input', async ({target}) => {
           test: 1
         }
       )
-      .then(({ data: { solution, error } }) => {
+      .then(({data: {solution, error}}) => {
         if (error) {
           solutionElements[partName].innerText = error;
         } else {
-          solutionElements[partName].innerText = solution[partName] ?? "No result (yet)";
+          if (typeof solution[partName] === 'number') {
+            solutionElements[partName].innerText = solution[partName] ?? "No result (yet)";
+          } else {
+            const content = solution[partName] ? solution[partName].split("\\n").join("<br>") : "No result (yet)";
+            const node = document.createElement('pre');
+            node.innerHTML = content;
+            solutionElements[partName].innerText = '';
+            solutionElements[partName].appendChild(node);
+          }
         }
       })
   })
