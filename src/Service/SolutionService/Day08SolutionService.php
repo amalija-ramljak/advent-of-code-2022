@@ -47,7 +47,7 @@ class Day08SolutionService implements DaySolutionServiceInterface
         return self::countVisibleTreesInFourDirections($trees);
     }
 
-    private static function calculatePartTwo(string $input): ?string
+    private static function calculatePartTwo(string $input): ?int
     {
         $trees = self::parseInput($input);
 
