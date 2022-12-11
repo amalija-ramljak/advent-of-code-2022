@@ -12,4 +12,9 @@ class MapService
             0
         );
     }
+
+    public static function mapStringToNumber(string $number)
+    {
+        return (int)$number;
+    }
 }
